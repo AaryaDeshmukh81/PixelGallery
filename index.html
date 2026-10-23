@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Pixel Gallery</h1>
+    <p>Explore the beauty of the world</p>
+  </header>
+
+  <main class="container">
+
+    <nav class="filters" aria-label="Image categories">
+      <button class="filter active" data-category="All">All</button>
+      <button class="filter" data-category="Nature">Nature</button>
+      <button class="filter" data-category="Animals">Animals</button>
+      <button class="filter" data-category="Architecture">Architecture</button>
+      <button class="filter" data-category="Technology">Technology</button>
+    </nav>
+
+    <section class="gallery" id="gallery"
+      aria-label="Photo gallery">
+    </section>
+
+  </main>
+
+  <!-- Image lightbox -->
+  <div class="lightbox" id="lightbox"
+       role="dialog" aria-modal="true"
+       aria-label="Image viewer" hidden>
+
+    <button class="close" id="closeBtn"
+      aria-label="Close">&times;</button>
+
+    <button class="nav prev" id="prevBtn"
+      aria-label="Previous image">&#10094;</button>
+
+    <img id="lightboxImage" src="" alt="Selected photograph">
+
+    <button class="nav next" id="nextBtn"
+      aria-label="Next image">&#10095;</button>
+
+    <p class="counter" id="counter"></p>
+  </div>
+
+  <footer>
+    <p>Designed with HTML, CSS and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
